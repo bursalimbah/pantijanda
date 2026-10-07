@@ -4,8 +4,10 @@ Aplikasi **PantiJanda** (*Pahlawan Sejati, Jawara Andalan*) menggunakan database
 
 | File | Isi |
 |---|---|
-| `schema.sql` | Skema lengkap: 17 tipe ENUM, 24 tabel, 3 view, index & foreign keys |
-| `seed.sql` | Data awal (sama dengan demo di `src/data/seed.js`) + konfigurasi settings |
+| `schema.sql` | Skema lengkap: 17 tipe ENUM, 23 tabel, 3 view, index & foreign keys |
+| `seed.sql` | Data awal (mengikuti demo di `src/data/seed.js`) + konfigurasi settings |
+
+> **Catatan:** `widow_profiles.kpi_points` adalah kolom *cache* untuk tampilan; angka kanonik dihitung dari `SUM(points)` pada `kpi_logs` — sehingga seed KPI tidak perlu persis sama dengan poin profil demo.
 
 ## Cara menjalankan
 
